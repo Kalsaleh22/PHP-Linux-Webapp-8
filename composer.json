@@ -1,0 +1,57 @@
+{
+  "name": "robinn/uikit",
+  "description": "A toolkit for developing universal web interfaces with support for multiple CSS frameworks.",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [
+    "templating",
+    "twig",
+    "bootstrap",
+    "fomantic-ui",
+    "css",
+    "framework"
+  ],
+  "authors": [
+    {
+      "name": "Róbert Kelčák",
+      "email": "robo@kelcak.com",
+      "homepage": "https://kelcak.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/RobiNN1/PHP-UI-Kit/issues",
+    "source": "https://github.com/RobiNN1/PHP-UI-Kit"
+  },
+  "require": {
+    "php": ">=8.1",
+    "twig/twig": "^3.5"
+  },
+  "require-dev": {
+    "gajus/dindent": "^2.0",
+    "phpstan/phpstan": "^1.9",
+    "phpunit/phpunit": "^9.5"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "RobiNN\\UiKit\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "genfiles": "php bin/genfiles",
+    "phpstan": "phpstan --ansi",
+    "test": "phpunit --colors=always"
+  }
+}
